@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Ukraine War</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <p>All Russian Military Machines lost in the Ukraine war</p>
 </br>
-<img src='static/Output.jpg'>
+<input type="checkbox" id="drone" name="drone" value="drone">
+<label for="drone"> drone</label><br>
+
+<input type="checkbox" id="helicopter" name="helicopter" value="helicopter">
+<label for="helicopter"> helicopter</label><br>
+
+<input type="checkbox" id="aircraft" name="aircraft" value="aircraft">
+<label for="aircraft"> aircraft</label><br>
+
+<input type="checkbox" id="tank" name="tank" value="tank">
+<label for="tank"> tank</label><br>
+
+<button type="button" onclick="sendRequest()">Click Me!</button>
+
+<img id="chart" >
+<script src="static/Scripts/home.js"></script>
 </body>
+
 </html>
