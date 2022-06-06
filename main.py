@@ -14,7 +14,7 @@ app.debug = True
 
 @app.route("/type", methods=['GET', 'POST'])
 def createplot():
-    file = 'Ukraine_war.csv'
+    file = 'ukraine_war.csv'
     if file != '':
         print(request.values["drone"])
 
